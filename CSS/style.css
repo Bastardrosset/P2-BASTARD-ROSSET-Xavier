@@ -26,6 +26,7 @@ h1 {
 p {
   line-height: 35px;
 }
+/*** Barre de recherche ***/
 h1,
 p,
 .research {
@@ -34,11 +35,7 @@ p,
 .research {
   position: relative;
   display: flex;
-  display: -ms-flexbox; /* Internet Explorer 9, ne prend en compte que les transformations 2D.*/
-  display: -webkit-flex; /*Safari and Chrome broswers*/
   flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
   margin-top: 30px;
   border-radius: 10px;
   height: 50px;
@@ -50,8 +47,6 @@ p,
   height: 100%;
 }
 .research i {
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,118 +75,49 @@ p,
   padding: 14px;
   border-radius: 0 10px 10px 0;
 }
+/*** Barre des filtres ***/
+.filtres {
+  display: block;
+  position: relative;
+  margin-top: 40px;
+}
+.fa-ul {
+}
+.filtre {
+  margin-left: 0;
+  padding-left: 0;
+}
+.info {
+  display: none;
+}
+/*.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-items: flex-start;
+}
 
 /************** Paramètres version desktop a 992 px ****************/
 @media only screen and (min-width: 992px) {
-  .filtres {
-    display: inline-block;
-    margin-top: 30px;
-    width: 80%;
-  }
-  .filter {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-content: flex-start;
-    -ms-flex-line-pack: start;
-    align-content: flex-start;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 43px;
-  }
-  .filter :first-child {
-    margin-right: 20px;
-    border: none;
-  }
-  .filter div {
-    position: relative;
-    margin-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: (5) px;
-    border: 1px solid #7a7979;
-    border-radius: 0 20px 20px 0;
-  }
-  .filter div i {
-    position: absolute;
-    color: #0065fc;
-    font-size: 22px;
-    background-color: #deebff;
-    padding: 10px;
-    border-radius: 25px;
-    transform: translateX(-25px) translateY(-11.5px);
-  }
-  .filtres div span {
-    padding-left: 25px;
-    padding-right: 20px;
-    font-weight: bold;
-  }
-  .filtres .info {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  .filtres .info i {
-    margin-left: 10px;
-    padding-right: 15px;
-    color: #0065fc;
-  }
-  .filtres .info span {
-    font-weight: normal;
-    padding-left: 0;
-  }
-  .card {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 30px;
-  }
 }
 /************** Paramètres version tablette a 768 px **************/
 @media only screen and (min-width: 768px) {
-  /************* HEADER *************/
+  /************* HEADER && NAVBAR *************/
   header {
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-align-content: flex-start;
-    -ms-flex-line-pack: start;
     align-content: flex-start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
     align-items: flex-start;
   }
   header .navBar {
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     align-items: flex-end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: flex-end;
     justify-content: right;
-    -webkit-justify-content: right;
-    -ms-flex-pack: right;
   }
   header .navBar ul {
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
   }
   ul {
@@ -209,33 +135,15 @@ p,
     border-top: 2px solid #0065fc;
     color: #0065fc;
   }
-  .main {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-align-content: flex-end;
-    -ms-flex-line-pack: end;
-    align-content: flex-end;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-  .hebergements {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-  }
+  /*.hebergements,
   .populaires {
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
   }
+  .card {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+  }*/
 }
 /************** Paramètres version mobiles ***************/
 @media only screen and (max-width: 768px) {
