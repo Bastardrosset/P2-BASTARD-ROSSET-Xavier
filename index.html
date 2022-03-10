@@ -9,13 +9,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=DM+Serif+Display&family=Lato&family=Libre+Baskerville&family=Limelight&family=Lobster&family=Noto+Sans&family=Noto+Serif&family=Pinyon+Script&family=Raleway:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
     </head>
     <header>
-        <div class="logo">
+        <div class="logo responsive">
             <img src="./assets/Booki@3x.png" alt="logo">
         </div>
         <nav class="navBar">
-            <ul>
-                <li><a href="#">hébergements</a></li>
-                <li><a href="#">activités</a></li>
+            <ul class="list-responsive">
+                <li class="active blue"><a href="#">hébergements</a></li>
+                <li class="gray"><a href="#">activités</a></li>
             </ul>
         </nav>
     </header>
@@ -25,37 +25,40 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <div class="research">
-                    <div>
+                <ul class="list-research flex-center">
+                    <li>
                         <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                         <input type="search" value="Marseille, France">
-                    </div>
-                    <div>
-                        <a href="#">Recherche</a>
-                    </div>
-            </div>
-            <div class="filtres">
-                <ul class="fa-ul">
-                    <li class="filtre">
-                        <span class="fa-li">Filtres</span>
                     </li>
                     <li>
-                        <span class="fa-li"><i class="fa-solid fa-child "></i>Economique</span>
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fa-solid fa-child"></i>Familial</span>
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-heart"></i>Romantique</span>
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-dog" ></i>Animaux autorisés</span>
+                        <a class="flex-center" href="#">Recherche</a>
+                        <span class="over-flow"><a href="#"></a><i class="fas fa-search"></i></span>
                     </li>
                 </ul>
-                <div class="info">
-                    <i class="fa fa-info-circle" ></i><span>Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
+            <div class="filtres">
+                <div>
+                    <span class="filtre">Filtres</span>
                 </div>
+                <ul class="icons flex-center">
+                    <li>
+                        <span class="icons-list flex-center"><i class="fa-solid fa-child "></i>Economique</span>
+                    </li>
+                    <li>
+                        <span class="icons-list flex-center"><i class="fa-solid fa-child"></i>Familial</span>
+                    </li>
+                    <li>
+                        <span class="icons-list flex-center"><i class="fas fa-heart"></i>Romantique</span>
+                    </li>
+                    <li>
+                        <span class="icons-list flex-center"><i class="fas fa-dog" ></i>Animaux autorisés</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <span class="icons-list flex-center"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
         </section>
         <section class="main">
