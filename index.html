@@ -1,71 +1,170 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>prj_1</title>
+        <title>Booki</title>
+        <link rel="shortcut icon" href="./assets/Booki.png">
         <meta charset="utf-8">
         <link rel="stylesheet" href="./CSS/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=DM+Serif+Display&family=Lato&family=Libre+Baskerville&family=Limelight&family=Lobster&family=Noto+Sans&family=Noto+Serif&family=Pinyon+Script&family=Raleway:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
-    <header>
-        <div class="logo responsive">
-            <img src="./assets/Booki@3x.png" alt="logo">
-        </div>
-        <nav class="navBar">
-            <ul class="list-responsive">
-                <li class="active blue"><a href="#">hébergements</a></li>
-                <li class="gray"><a href="#">activités</a></li>
-            </ul>
-        </nav>
-    </header>
-        <section class="search engine">
-            <div class="title">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
+    <body>
+        <header>
+            <div class="logo responsive">
+                <img src="./assets/Booki.png" alt="logo">
             </div>
-            <div class="research">
-                <ul class="list-research flex-center">
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                    </li>
-                    <li>
-                        <input type="search" value="Marseille, France">
-                    </li>
-                    <li>
-                        <a class="flex-center" href="#">Recherche</a>
-                        <span class="over-flow"><a href="#"></a><i class="fas fa-search"></i></span>
-                    </li>
+            <nav class="navBar">
+                <ul class="list-responsive">
+                    <li class="active blue"><a href="#">hébergements</a></li>
+                    <li class="gray"><a href="#">activités</a></li>
                 </ul>
-            </div>
-            <div class="filtres">
-                <div>
-                    <span class="filtre">Filtres</span>
+            </nav>
+        </header>
+            <section class="search engine">
+                <div class="title">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <ul class="icons flex-center">
-                    <li>
-                        <span class="icons-list flex-center"><i class="fa-solid fa-child "></i>Economique</span>
-                    </li>
-                    <li>
-                        <span class="icons-list flex-center"><i class="fa-solid fa-child"></i>Familial</span>
-                    </li>
-                    <li>
-                        <span class="icons-list flex-center"><i class="fas fa-heart"></i>Romantique</span>
-                    </li>
-                    <li>
-                        <span class="icons-list flex-center"><i class="fas fa-dog" ></i>Animaux autorisés</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="info">
-                <span class="icons-list flex-center"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</span>
-            </div>
-        </section>
-        <section class="main">
-            <div class="card hebergements"></div>
-            <aside class="card populaires"></aside>
-        </section>
-        <section class="activites">
-        </section>
-    <footer></footer>
+                <div class="research">
+                    <ul class="list-research flex-center">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </li>
+                        <li>
+                            <input type="search" value="Marseille, France">
+                        </li>
+                        <li class="flex-center over">
+                            <a class="" href="#" style="color: #fff;">Recherche</a>
+                        </li>
+                        <li class="over-flow">
+                            <span"><a href="#"></a><i class="fas fa-search flex-center"></i></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filtres">
+                    <div>
+                        <span class="filtre">Filtres</span>
+                    </div>
+                    <ul class="icons flex-center">
+                        <li>
+                            <span class="icons-list flex-center"><i class="fas fa-money-bill-wave"></i></i>Economique</span>
+                        </li>
+                        <li>
+                            <span class="icons-list flex-center"><i class="fa-solid fa-child"></i>Familial</span>
+                        </li>
+                        <li>
+                            <span class="icons-list flex-center"><i class="fas fa-heart"></i>Romantique</span>
+                        </li>
+                        <li>
+                            <span class="icons-list flex-center"><i class="fas fa-dog" ></i>Animaux autorisés</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <span class="icons-list flex-center"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</span>
+                </div>
+            </section>
+            <section class="main">
+                <div class="hebergements">
+                    <div>
+                        <h2>Hébergements à Marseille</h2>
+                    </div>
+                    <div class="row">
+                        <div class="background-color flex-center">
+                            <div class="img-marseille">
+                                <img src="./assets/Hebergements/Auberge la cannebier.jpg" alt="vue sur chambre Auberge la Cannebière">
+                                <div class="text-img-marseille">
+                                    <h3>Auberge la cannebière</h3>
+                                    <p>Nuit à partir de <span class="bold">25€ </span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-color flex-center">
+                            <div class="img-marseille">
+                                <img src="./assets/Hebergements/Hotel du port.jpg" alt="vue sur chambre Auberge la Cannebière">
+                                <div class="text-img-marseille">
+                                    <h3>Hotel du port</h3>
+                                    <p>Nuit à partir de <span class="bold">52€ </span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-color flex-center">
+                            <div class="img-marseille">
+                                <img src="./assets/Hebergements/Hotel des mouettes.jpg" alt="vue sur chambre Auberge la Cannebière">
+                                <div class="text-img-marseille">
+                                    <h3>Hotel des mouettes</h3>
+                                    <p>Nuit à partir de <span class="bold">76€ </span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="background-color flex-center">
+                            <div class="img-marseille">
+                                <img src="./assets/Hebergements/Hotel de la mer.jpg" alt="vue sur chambre Auberge la Cannebière">
+                                <div class="text-img-marseille">
+                                    <h3>Hotel de la mer</h3>
+                                    <p>Nuit à partir de <span class="bold">46€ </span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-color flex-center">
+                            <div class="img-marseille">
+                                <img src="./assets/Hebergements/Auberge du panier.jpg" alt="vue sur chambre Auberge la Cannebière">
+                                <div class="text-img-marseille">
+                                    <h3>Auberge la panier</h3>
+                                    <p>Nuit à partir de <span class="bold">23€ </span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="background-color flex-center">
+                            <div class="img-marseille">
+                                <img src="./assets/Hebergements/Hotel chez amina.jpg" alt="vue sur chambre Auberge la Cannebière">
+                                <div class="text-img-marseille">
+                                    <h3>Hotel chez Amina</h3>
+                                    <p>Nuit à partir de <span class="bold">96€ </span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">Afficher plus</a>
+                </div>
+                <aside class="populaires">
+                    <div>
+                        <h2>Les plus populaires</h2>
+                    </div>
+                    <div>   
+                        <div class="column">
+                            <div class="background-color img-populaire-marseille">
+                                <img src="./assets/Hebergements/Hotel le soleil.jpg">
+                                <div class="text-img-marseille">
+                                    <h3>Hotel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <span class="bold">128€ </span></p>
+                                </div>
+                            </div>
+                            <div class="background-color img-populaire-marseille">
+                                <img src="./assets/Hebergements/Au coeur de l'eau.jpg">
+                                <div class="text-img-marseille">
+                                    <h3>Au coeur de l'eau</h3>
+                                    <p>Nuit à partir de <span class="bold">71€ </span></p>
+                                </div>
+                            </div>
+                            <div class="background-color img-populaire-marseille">
+                                <img src="./assets/Hebergements/Hotel tout bleu et blanc.jpg">
+                                <div class="text-img-marseille">
+                                    <h3>Hotel Le soleil du matin</h3>
+                                    <p>Nuit à partir de <span class="bold">68€ </span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+            <section class="activites">
+            </section>
+        <footer></footer>
+    </body>
 </html>
