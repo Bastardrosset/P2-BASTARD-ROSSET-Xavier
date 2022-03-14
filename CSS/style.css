@@ -12,6 +12,11 @@
 body {
   margin: 0;
 }
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -33,52 +38,26 @@ h1 {
 .gray {
   color: #f2f2f2;
 }
-.flex-center {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
 /************* HEADER && NAVBAR *************/
-header,
-.search {
-  margin-left: 40px;
-}
 header {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
 }
 header .logo {
   display: block;
-  padding-top: 40px;
-  margin-left: 10px;
   width: 200px;
 }
 header .logo img {
   width: 100px;
 }
 header .list {
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-bottom: 50px;
   padding-right: 80px;
 }
 header .list li {
   text-transform: capitalize;
-}
-header .navBar ul li a {
-  padding: 20px;
-  transition: 0.3s ease;
 }
 header .navBar ul li a:hover {
   border-top: 3px solid #0065fc;
@@ -86,35 +65,37 @@ header .navBar ul li a:hover {
 }
 /*** Barre de recherche ***/
 .research {
-  display: -webkit-flex;
   display: flex;
-  margin-top: 30px;
+  flex-direction: row;
   border-radius: 10px;
-  height: 35px;
+  height: 40px;
 }
-.list-research {
+.listResearch {
+  display: flex;
+  height: 40px;
   padding: 0;
 }
-.list-research li i {
-  position: relative;
+.listResearch li i {
+  display: flex;
+  align-items: baseline;
   font-size: 22px;
   padding: 10px;
   background-color: #f2f2f2;
-  margin-right: -2px;
   border-radius: 10px 0 0 10px;
   border: 2px solid #f2f2f2;
-  height: 42px;
+  height: 40px;
+  transform: translateX(2px);
 }
-.list-research li input {
+.listResearch li input {
   font-size: 18px;
   font-weight: bold;
   border: 1px solid #f2f2f2;
   width: 270px;
-  height: 41px;
-  padding-left: 20px;
+  height: 40px;
 }
-.list-research .over a {
-  display: block;
+.listResearch .over a {
+  display: flex;
+  align-items: baseline;
   font-size: 18px;
   color: #fff;
   background-color: #0065fc;
@@ -122,79 +103,74 @@ header .navBar ul li a:hover {
   margin-left: -2px;
   border-radius: 0 10px 10px 0;
   font-weight: 500;
-  text-align: center;
 }
-.list-research .over-flow {
+.listResearch .overFlow {
   display: none;
 }
 /*** Barre des filtres ***/
-.filtres span {
+.rowFiltres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   font-weight: bold;
   font-size: 16px;
-}
-.filtres {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-items: center;
-  align-items: center;
   margin-top: 20px;
+  width: 80%;
+  height: 60px;
 }
-.filtre {
-  margin-right: 10px;
-}
-.icons {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.icons li {
-  display: -webkit-flex;
+.rowFiltres ul {
   display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 90%;
+}
+.rowFiltres ul :first-child {
+  border: none;
+}
+.rowFiltres ul li {
+  display: flex;
+  align-items: center;
   border: 2px solid #f2f2f2;
-  margin-right: 30px;
-  padding-right: 20px;
   border-radius: 25px;
+  padding-right: 10px;
   cursor: pointer;
 }
-.icons li span {
-  padding-left: 8px;
-}
-.icons-list i {
-  display: -webkit-flex;
+.rowFiltres ul li i {
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-align-items: center;
   align-items: center;
   font-size: 18px;
-  width: 50px;
-  height: 50px;
   background-color: #deebff;
-  border-radius: 25px;
-  transform: translateX(-15px);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateX(-3px);
   color: #0065fc;
   transition: 0.3s ease;
 }
-.icons li:hover > .icons-list i {
+.iconsList:hover > .rowFiltres li i {
   background-color: #0065fc;
   color: #f2f2f2;
 }
 .info {
-  float: inline-start;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+.iconInfo {
   display: flex;
   align-items: center;
-  margin-left: 15px;
 }
 .info i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #474646;
   background-color: transparent;
-  height: 50px;
   font-size: 12px;
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  border-radius: 50%;
+  color: #0065fc;
+  margin-right: 10px;
 }
 /*** Hébergements à Marseille ***/
 .main {
@@ -208,14 +184,14 @@ header .navBar ul li a:hover {
   border-radius: 20px;
 }
 .hebergements {
-  width: 70%;
-  margin-left: 40px;
+  width: 65%;
+}
+.row {
+  display: flex;
 }
 .populaires {
   margin-left: 35px;
-  width: 40%;
-  margin-right: 40px;
-  padding-right: 30px;
+  width: 30%;
 }
 h2 {
   width: 90%;
@@ -223,8 +199,8 @@ h2 {
   font-size: 22px;
   padding-top: 20px;
   margin-bottom: 20px;
-  margin-left: 35px;
 }
+/***
 .populaires h2 i {
   float: right;
   display: block;
