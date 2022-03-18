@@ -134,7 +134,7 @@ header .navBar ul li a:hover {
   font-weight: bold;
   font-size: 15px;
   margin-top: 20px;
-  width: 90%;
+  width: 75%;
 }
 .rowFiltres ul {
   display: flex;
@@ -167,7 +167,6 @@ header .navBar ul li a:hover {
   height: 40px;
   transform: translateX(-3px);
   color: #0065fc;
-  transition: 0.3s ease;
 }
 .info {
   margin-top: 30px;
@@ -656,6 +655,9 @@ footer :nth-child(2) {
 }
 /*** Version tablette ***/
 @media all and (min-width: 768px) and (max-width: 991px) {
+  .rowFiltres ul li {
+    margin: 0px 15px 10px 0px;
+  }
   .main {
   }
   .hebergements {
