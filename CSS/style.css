@@ -273,11 +273,12 @@ header .navBar ul li a:hover {
 .imgPopulaireMarseille {
   display: flex;
   width: 100%;
+  height: 31%;
   margin-bottom: 20px;
   cursor: pointer;
 }
 .imgPopulaireMarseille img {
-  width: 100px;
+  width: 40%;
   height: 105px;
   border-radius: 10px 0 0 10px;
   object-fit: cover;
@@ -310,12 +311,17 @@ header .navBar ul li a:hover {
 .rowActivites .column_2,
 .rowActivites .img_4,
 .rowActivites .column_4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 23%;
   height: 380px;
   cursor: pointer;
 }
-.rowActivites .column_2,
-.rowActivites .column_4 {
+.rowActivites .img_2,
+.rowActivites .img_3,
+.rowActivites .img_5,
+.rowActivites .img_6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -337,12 +343,12 @@ header .navBar ul li a:hover {
   object-fit: cover;
 }
 .rowActivites .img_2 {
-  height: 200px;
+  height: 210px;
 }
 .rowActivites .img_2 img {
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 170px;
 }
 .rowActivites .img_3 {
   width: 100%;
@@ -351,20 +357,20 @@ header .navBar ul li a:hover {
 .rowActivites .img_3 img {
   object-fit: cover;
   width: 100%;
-  height: 110px;
+  height: 100px;
 }
 .rowActivites .img_5 {
   height: 160px;
   width: 100%;
 }
 .rowActivites .img_6 {
-  height: 60%;
+  height: 190px;
   margin-top: 30px;
 }
 .rowActivites .img_5 img {
   object-fit: cover;
   width: 100%;
-  height: 110px;
+  height: 120px;
 }
 .rowActivites .img_6 img {
   object-fit: cover;
@@ -408,7 +414,7 @@ footer :nth-child(2) {
   display: flex;
 }
 /************** Paramètres version mobile ***************/
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   main {
     padding: 0;
     width: 100%;
@@ -500,6 +506,7 @@ footer :nth-child(2) {
   .rowFiltres ul {
     display: flex;
     align-self: flex-start;
+    justify-content: flex-start;
   }
   .rowFiltres ul li {
     margin: 0px 15px 10px 0px;
@@ -532,6 +539,16 @@ footer :nth-child(2) {
     background-color: #f2f2f2;
     border-radius: 0px 0px;
   }
+  .imgPopulaireMarseille {
+    width: 95%;
+  }
+  .imgPopulaireMarseille img {
+    width: 130px;
+    height: 120px;
+  }
+  .imgPopulaireMarseille .column ul {
+    margin-bottom: 8px;
+  }
   .hebergements {
     background-color: #fff;
     width: 99%;
@@ -549,10 +566,13 @@ footer :nth-child(2) {
   }
   .imgMarseille {
     width: 100%;
-    height: 190px;
+    height: 180px;
     margin-bottom: 10px;
     border-radius: 20px;
     box-shadow: 0.5px 0.5px 10px 0.5px #f2f2f2, -0.5px -0.5px 10px 0.5px #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .hebergements .imgMarseille img {
     height: 110px;
@@ -632,5 +652,83 @@ footer :nth-child(2) {
   }
   footer :nth-child(2) {
     display: flex;
+  }
+}
+/*** Version tablette ***/
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .main {
+  }
+  .hebergements {
+    width: 57%;
+  }
+  .imgMarseille {
+    width: 48%;
+  }
+  .populaires {
+    width: 40%;
+  }
+  .imgPopulaireMarseille {
+    flex-direction: column;
+    height: 190px;
+  }
+  .imgPopulaireMarseille img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .activites {
+    height: 100%;
+  }
+  .rowActivites {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .rowActivites .img_1,
+  .rowActivites .column_2,
+  .rowActivites .img_4,
+  .rowActivites .column_4 {
+    width: 48%;
+    height: 400px;
+  }
+  .rowActivites .img_1 img,
+  .rowActivites .img_4 img {
+    height: 370px;
+  }
+  .rowActivites .column_2,
+  .rowActivites .column_4 {
+    justify-content: space-between;
+  }
+  .rowActivites .column_2 .img_2 {
+    height: 210px;
+  }
+  .rowActivites .column_2 .img_3 {
+    height: 160px;
+  }
+  .rowActivites .column_2 .img_3 img {
+    height: 120px;
+  }
+  .rowActivites .column_4 .img_5 {
+    height: 180px;
+  }
+  .rowActivites .column_4 .img_5 img {
+    height: 140px;
+  }
+  .rowActivites .column_4 .img_6 {
+    height: 210px;
+  }
+  .rowActivites .column_4 .img_6 img {
+    height: 150px;
+  }
+  .rowActivites .img_4 {
+    order: 4;
+  }
+  .rowActivites .column_4,
+  .rowActivites .img_4 {
+    margin-top: 25px;
+  }
+  footer .footerPropos {
+    padding: 0px;
+  }
+  footer ul li {
+    font-size: 15px;
   }
 }
