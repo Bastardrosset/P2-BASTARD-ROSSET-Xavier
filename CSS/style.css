@@ -583,7 +583,7 @@ footer :nth-child(2) {
   }
   .imgMarseille {
     width: 100%;
-    height: 180px;
+    height: 200px;
     margin-bottom: 10px;
     border-radius: 20px;
     display: flex;
@@ -649,7 +649,7 @@ footer :nth-child(2) {
     margin-top: 0px;
   }
   /*** FOOTER ***/
-  footer {
+  .largeur {
     display: flex;
     flex-direction: column;
   }
