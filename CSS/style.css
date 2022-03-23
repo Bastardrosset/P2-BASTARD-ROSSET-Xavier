@@ -290,6 +290,11 @@ header .navBar ul li a:hover {
   float: right;
   display: block;
 }
+.populaires .spaceBeetwen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .imgPopulaireMarseille {
   display: flex;
   width: 100%;
@@ -470,14 +475,15 @@ footer :nth-child(2) {
   }
   /*** Barre de recherche ***/
   .search {
-    padding-left: 10px;
-    width: 90%;
+    padding: 0px 10px;
+    width: 100%;
   }
   .research {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     height: 40px;
+    width: 100%;
   }
   .listResearch {
     display: flex;
@@ -489,8 +495,12 @@ footer :nth-child(2) {
   }
   .listResearch li input {
     font-size: 16px;
-    width: 200px;
+    width: 250px;
     height: 40px;
+  }
+  .listResearch li input::placeholder {
+    font-weight: 700;
+    color: #000;
   }
   .listResearch .over {
     display: none;
@@ -503,8 +513,8 @@ footer :nth-child(2) {
     color: #fff;
     height: 40px;
     background-color: #0065fc;
-    margin-left: -4px;
-    border-radius: 0 10px 10px 0;
+    margin-left: -8px;
+    border-radius: 10px 10px 10px 10px;
     border: none;
   }
   /*** Barre des filtres ***/
@@ -524,9 +534,10 @@ footer :nth-child(2) {
     align-self: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: 100%;
   }
   .rowFiltres ul li {
-    margin: 0px 15px 10px 0px;
+    margin: 0px 40px 10px 0px;
   }
   .info {
     margin: 0;
@@ -555,9 +566,10 @@ footer :nth-child(2) {
   .populaires {
     background-color: #f2f2f2;
     border-radius: 0px 0px;
+    width: 100%;
   }
   .imgPopulaireMarseille {
-    width: 95%;
+    width: 100%;
   }
   .imgPopulaireMarseille img {
     width: 130px;
@@ -608,9 +620,12 @@ footer :nth-child(2) {
   .activites {
     height: 100%;
   }
-  .rowActivites h2,
+  .activites h2,
   .activites {
     margin-top: 5px;
+  }
+  .activites {
+    justify-content: space-between;
   }
   .rowActivites .img_1,
   .rowActivites .img_4 {
@@ -647,6 +662,9 @@ footer :nth-child(2) {
   }
   .rowActivites .img_6 {
     margin-top: 0px;
+  }
+  .rowActivites h3 {
+    margin-top: 10px;
   }
   /*** FOOTER ***/
   .largeur {
@@ -710,7 +728,7 @@ footer :nth-child(2) {
   }
   .rowActivites .img_1 img,
   .rowActivites .img_4 img {
-    height: 370px;
+    height: 360px;
   }
   .rowActivites .column_2,
   .rowActivites .column_4 {
@@ -719,6 +737,9 @@ footer :nth-child(2) {
   .rowActivites .column_2 .img_2 {
     height: 210px;
   }
+  .rowActivites .column_2 .img_2 img {
+    height: 165px;
+  }
   .rowActivites .column_2 .img_3 {
     height: 160px;
   }
@@ -726,23 +747,26 @@ footer :nth-child(2) {
     height: 120px;
   }
   .rowActivites .column_4 .img_5 {
-    height: 180px;
+    height: 170px;
   }
   .rowActivites .column_4 .img_5 img {
-    height: 140px;
+    height: 125px;
   }
   .rowActivites .column_4 .img_6 {
-    height: 210px;
+    height: 200px;
   }
   .rowActivites .column_4 .img_6 img {
-    height: 150px;
+    height: 155px;
   }
   .rowActivites .img_4 {
     order: 4;
   }
+  .rowActivites .img_4 img {
+    height: 355px;
+  }
   .rowActivites .column_4,
   .rowActivites .img_4 {
-    margin-top: 25px;
+    margin-top: 20px;
   }
   footer .footerPropos {
     padding: 0px;
