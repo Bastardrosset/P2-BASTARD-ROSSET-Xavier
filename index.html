@@ -15,7 +15,7 @@
         <main>
             <header>
                 <div class="logo">
-                    <img class="object_cover" src="./images/Booki.png" alt="logo">
+                    <img class="object_cover" src="../images/Booki.png" alt="logo">
                 </div>
                 <nav class="navBar">
                     <ul class="list responsive">
@@ -28,12 +28,12 @@
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     <div class="research">
-                        <ul class="listResearch">
-                            <li><i class="fas fa-map-marker-alt flex-center"></i></li>
-                            <li><input type="search" id="recherche" placeholder="Marseille, France"></li>
-                            <li class="flex-center over"><a href="#">Rechercher</a></li>
-                            <li class="flex-center overFlow"><a href="#"><i class="fas fa-search flex-center"></i></a></li>
-                        </ul>
+                        <form action="page-de-traitement.php" method="post" class="listResearch">
+                            <i class="fas fa-map-marker-alt flex-center"></i>
+                            <input type="search" id="recherche" placeholder="Marseille, France">
+                            <a class="flex-center over" href="#">Rechercher</a>
+                            <a class="flex-center overFlow" href="#"><i class="fas fa-search flex-center"></i></a>
+                        </form>
                     </div>
                     <div class="rowFiltres">
                         <ul>
@@ -54,7 +54,7 @@
                         <div class="rowHebergements">
                             <div class="imgMarseille boxShadowDark">
                                 <a href="#">
-                                    <img class="object_cover" src="./images/Hebergements/Auberge_la_cannebiere.jpg" alt="vue sur chambre Auberge la Cannebière" >
+                                    <img class="object_cover" src="../images/Hebergements/Auberge_la_cannebiere.jpg" alt="vue sur chambre Auberge la Cannebière" >
                                     <h3>Auberge La Cannebière</h3>
                                     <p>Nuit à partir de <span class="bold">25€ </span></p>
                                         <ul>
@@ -68,7 +68,7 @@
                             </div>
                             <div class="imgMarseille boxShadowDark">
                                 <a href="#">
-                                    <img class="object_cover" src="./images/Hebergements/Hotel_du_port.jpg" alt="Vue sur chambre Hotel du port">
+                                    <img class="object_cover" src="../images/Hebergements/Hotel_du_port.jpg" alt="Vue sur chambre Hotel du port">
                                     <h3>Hôtel du port</h3>
                                     <p>Nuit à partir de <span class="bold">52€ </span></p>
                                         <ul>
@@ -82,7 +82,7 @@
                             </div>
                             <div class="imgMarseille boxShadowDark">
                                 <a href="#">
-                                    <img class="object_cover" src="./images/Hebergements/Hotel_des_mouettes.jpg" alt="vue sur chambre Hotel des mouettes" >
+                                    <img class="object_cover" src="../images/Hebergements/Hotel_des_mouettes.jpg" alt="vue sur chambre Hotel des mouettes" >
                                     <h3>Hôtel Les mouettes</h3>
                                     <p>Nuit à partir de <span class="bold">76€ </span></p>
                                         <ul>
@@ -96,7 +96,7 @@
                             </div>
                             <div class="imgMarseille boxShadowDark">
                                 <a href="#">
-                                    <img class="object_cover" src="./images/Hebergements/Hotel_de_la_mer.jpg" alt="vue sur chambre Hotel de la mer" >
+                                    <img class="object_cover" src="../images/Hebergements/Hotel_de_la_mer.jpg" alt="vue sur chambre Hotel de la mer" >
                                     <h3>Hôtel de la mer</h3>
                                     <p>Nuit à partir de <span class="bold">46€ </span></p>
                                         <ul>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="imgMarseille boxShadowDark">
                                 <a href="#">
-                                    <img class="object_cover" src="./images/Hebergements/Auberge_du_panier.jpg" alt="vue sur chambre Auberge du panier" >
+                                    <img class="object_cover" src="../images/Hebergements/Auberge_du_panier.jpg" alt="vue sur chambre Auberge du panier" >
                                     <h3>Auberge Le Panier</h3>
                                     <p>Nuit à partir de <span class="bold">23€ </span></p>
                                         <ul>
@@ -124,7 +124,7 @@
                             </div>
                             <div class="imgMarseille boxShadowDark">
                                 <a href="#">
-                                    <img class="object_cover" src="./images/Hebergements/Hotel_chez_amina.jpg" alt="vue sur chambre Hotel chez Amina" >
+                                    <img class="object_cover" src="../images/Hebergements/Hotel_chez_amina.jpg" alt="vue sur chambre Hotel chez Amina" >
                                     <h3>Hotel chez Amina</h3>
                                     <p>Nuit à partir de <span class="bold">96€ </span></p>
                                         <ul>
@@ -139,14 +139,14 @@
                         </div>
                         <a href="#" class="bold">Afficher plus</a>
                     </div>
-                    <aside class="populaires">
+                    <div class="populaires">
                         <div class="spaceBeetwen">
                             <h2>Les plus populaires</h2> <i class="fas fa-chart-line"></i>
                         </div> 
                             <div class="aside column">
                                 <a href="#">
                                     <div class="imgPopulaireMarseille boxShadowDark">
-                                        <img class="object_cover" src="./images/Hebergements/Hotel_le_soleil_du_matin.jpg" alt="Vue sur chambre Hotel le soleil">
+                                        <img class="object_cover" src="../images/Hebergements/Hotel_le_soleil_du_matin.jpg" alt="Vue sur chambre Hotel le soleil">
                                         <div class="column">    
                                             <h3>Hôtel Le soleil du matin</h3>
                                                 <p>Nuit à partir de <span class="bold">128€ </span></p>
@@ -162,7 +162,7 @@
                                 </a>
                                 <a href="#">
                                     <div class="imgPopulaireMarseille boxShadowDark">
-                                        <img class="object_cover" src="./images/Hebergements/Au_coeur_de_l_eau.jpg" alt="Vue sur chambre Au coeur de l'eau">
+                                        <img class="object_cover" src="../images/Hebergements/Au_coeur_de_l_eau.jpg" alt="Vue sur chambre Au coeur de l'eau">
                                         <div class="column">    
                                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                                 <p>Nuit à partir de <span class="bold">71€ </span></p>    
@@ -178,7 +178,7 @@
                                 </a>
                                 <a href="#">
                                     <div class="imgPopulaireMarseille boxShadowDark">
-                                        <img class="object_cover" src="./images/Hebergements/Hotel_tout_bleu_tout_blanc.jpg" alt="Vue sur chambre Hotel tout bleu et blanc">
+                                        <img class="object_cover" src="../images/Hebergements/Hotel_tout_bleu_tout_blanc.jpg" alt="Vue sur chambre Hotel tout bleu et blanc">
                                         <div class="column">    
                                             <h3>Hôtel Tout bleu et Blanc</h3>
                                                 <p>Nuit à partir de <span class="bold">68€ </span></p>    
@@ -193,47 +193,47 @@
                                     </div>
                                 </a>
                             </div>
-                    </aside>
+                        </div>
                 </section>
                 <section class="activites" id="activites">
                         <h2>Activités à Marseille</h2>
                     <div class="rowActivites">
                         <a class="img_1 boxShadow" href="#">
                             <div>
-                                <img class="object_cover" src="./images/Activites/Vieux_port.jpg" alt="photo du Vieux Port de Marseille">
+                                <img class="object_cover" src="../images/Activites/Vieux_port.jpg" alt="photo du Vieux Port de Marseille">
                                 <h3>Vieux Port</h3>
                             </div>
                         </a>
                         <div class="column_2">
                             <a class="img_2 boxShadow" href="#">
                                 <div>
-                                    <img class="object_cover" src="./images/Activites/Fort_de_pomegues.jpg" alt="photo du Fort de Pomègues">
+                                    <img class="object_cover" src="../images/Activites/Fort_de_pomegues.jpg" alt="photo du Fort de Pomègues">
                                     <h3>Fort de Pomègues</h3>
                                 </div>
                             </a>
                             <a class="img_3 boxShadow" href="#">
                                 <div>
-                                    <img class="object_cover" src="./images/Activites/Ile_du_frioul.jpg" alt="photo de l'Iles du frioul">
+                                    <img class="object_cover" src="../images/Activites/Ile_du_frioul.jpg" alt="photo de l'Iles du frioul">
                                     <h3>Îles du frioul</h3>
                                 </div>
                             </a>
                         </div>
                         <a class="img_4 boxShadow" href="#">
                             <div>
-                                <img class="object_cover" src="./images/Activites/Parc_national_des_calanques.jpg" alt="photo du Parc National des Calanques">
+                                <img class="object_cover" src="../images/Activites/Parc_national_des_calanques.jpg" alt="photo du Parc National des Calanques">
                                 <h3>Parc National des Calanques</h3>
                             </div>
                         </a>
                         <div class="column_4">
                             <a class="img_5 boxShadow" href="#">
                                 <div>
-                                    <img class="object_cover" src="./images/Activites/Notres_dame_de_la_garde.jpg" alt="photo de Notre Dame de la Garde">
+                                    <img class="object_cover" src="../images/Activites/Notres_dame_de_la_garde.jpg" alt="photo de Notre Dame de la Garde">
                                     <h3>Notre Dame de la Garde</h3>
                                 </div>
                             </a>
                             <a class="img_6 boxShadow" href="#">
                                 <div>
-                                    <img class="object_cover" src="./images/Activites/Parc_longchamp.jpg" alt="photo du Parc longchamp">
+                                    <img class="object_cover" src="../images/Activites/Parc_longchamp.jpg" alt="photo du Parc longchamp">
                                     <h3>Parc Longchamp</h3>
                                 </div>
                             </a>
